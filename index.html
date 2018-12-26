@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+         <script src="jquery-3.3.1.js" charset="utf-8"></script>
+         <script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("ul").hide();
+  });
+  $("#show").click(function(){
+    $("ul").show();
+  });
+});
+$(document).ready(function(){
+  $("#ki").click(function(){
+    $("p").hide();
+  });
+});
+$(document).ready(function(){
+  $("#kiri").mouseenter(function(){
+    alert("The Page Says You entered to Uki!");
+  });
+});
+$(document).ready(function(){
+  $("h1").mouseover(function(){
+    $("h1").css("background-color", "lightblue");
+  });
+  $("h1").mouseout(function(){
+    $("h1").css("background-color", "gray");
+  });
+});
+</script>
+    <style media="screen" type="text/css">
+
+      .box1 {
+
+
+        text-align:justify;
+        background-color:lightblue;
+        border-radius:25px;
+        padding:20px;
+        margin :5px 200px 20px 200px;
+      }
+      #box2 {
+        float:right;
+        background-color:grey;
+        border-radius:25px;
+        padding:15px 5px 50px 15px;
+
+        width:500px;
+
+
+      }
+      #box3{
+
+        background-color:grey;
+        border-radius:25px;
+        float:left;
+
+        width:500px;
+        padding:15px 5px 50px 15px;
+        }
+      #footer{
+        position: bottom;
+        left: auto;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        padding: 0px 0px 1px 0px;
+        margin:400px 1px 5px 1px;
+      }
+
+      #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: lightblue;
+        border: solid 1px #c3c3c3;
+      }
+
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <center><a href="#">Home</a> ｜
+    <a href="form.html">Form</a> ｜
+    <a href="table.html">Time Table</a> </center> <br>
+    <center><img src="uki.png" alt="uki" width="1000" height="auto"></center>
+    <div id="flip">Welcome to uki</div>
+     <div id="panel">Hai uki!</div>
+    <div class="box1" border="1" id="kiri">
+
+      <h2 >Welcome to Uki Stepping stone to tech life </h2>
+It is a full scholarship based Accelerator program for Coding in Jaffna, Sri Lanka targeting students <br> who has completed Advanced Level examinations
+ and don’t have access to university education or any other form of vocational education.<br>
+  It is aimed to provide the necessary training to enter Computer Software industry or to start an IT startup.<br>
+This is a joint initiative by Yarl IT Hub and SERVE Foundation.<br> Yarl IT Hub has been functioning for the last five years as a not for profit social enterprise focusing on technology entrepreneurship in northern Sri Lanka and SERVE Foundation is a four year old foundation focusing on using
+technology to uplift secondary education standards in rural schools in northern Sri Lanka.
+    </div>
+
+    <div id="box2"> <br><br>
+      <h1>CODING ACCELERATOR PROGRAM</h1>
+<p>This Coding Accelerator program is an intensive training on full-stack development with server-side Node.
+js and modern, client-side, front-end libraries and frameworks.
+Throughout this intensive course the student will study professional software development
+techniques and practices as he/she advances his/her skills on JavaScript.</p>
+<button id="ki">details</button>
+    </div>
+    <div id="box3">
+      <h1>course</h1>
+       our vision is to be a leading center of execllence
+        <ul>
+     <li>programming</li>
+     <li>Basic Business Skills</li>
+     <li>Spoken English and Communication Skills.</li>
+     <li>Personal Coaching</li>
+   </ul>
+   <button id="hide">Hide</button>
+<button id="show">Show</button>
+
+    </div>
+
+
+    <div id="footer">
+      <p> 2017 &copy; Uki All Rights Reserved. A Joint initiative by Yarl IT Hub and SERVE Foundation</p>
+    </div>
+
+  </body>
+</html>
